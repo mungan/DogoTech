@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@media (max-width: 650px){
+    header ul{
+      position: fixed;
+      top: -100%;
+      left:0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      z-index: 99;
+      opacity: 0.97;
+      transition: 0.5s linear;
+    }
+
+
+header .menu,
+header .close{
+  display: block;
+}
+
+header .close{
+  position: absolute;
+  top:10px;
+  right: 20px;
+}
+
+header ul.toggle{
+  top:0;
+}
+
+}
+
+.section{
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.details{
+  padding: 30px 0;
+}
+
+.big-img{
+  max-width: 500px;
+  min-width: 290px;
+  margin: 25px;
+}
+
+.big-img img{
+  max-height: 400px;
+}
+
+.details .box{
+  max-width: 500px;
+  min-width: 290px;
+  margin: 25px;
+}
+
+.box .row{
+  margin-bottom: 15px;
+}
+
+.box .row h2{
+  letter-spacing: 2px;
+}
+
+.box .numbers button{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.box .numbers button:hover{
+  background-color: crimson;
+}
+
+.box .numbers button.active{
+  opacity: 1;
+  border: 2px solid crimson;
+}
+
+.desc{
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.thumb{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.thumb img{
+  width: 90px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  opacity: 0.7;
+  border-radius: 5px; 
+}
+
+.thumb img.active{
+  opacity: 1;
+  border: 1px solid lightseagreen;
+}
+
+.box .cart{
+  padding: 5px 25px;
+  margin-top: 15px;
+  float: left;
+}
+
+@media (max-width: 500px){
+  .thumb{
+    height: 50px;
+  }
+  .thumb img{
+    width: 50px;
+  }
+
+  .titles{
+    display: inline-block !important;
+  }
+
+  .titles h2{
+    margin-bottom: 10px;
+  }
+
+  .normalprice, .saleprice{
+    margin-right: 10px;
+  }
+
+  
+}
+
+
+.campaingrate{
+  color: #444;
+  border: 1.5px double cornflowerblue;
+  padding: 1px 10px;
+  border-radius: 15px 120px 20px 150px/140px 10px 130px 15px;
+}
+
+.normalprice{
+    color: #555;
+    text-decoration: line-through;
+}
